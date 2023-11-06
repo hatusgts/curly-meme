@@ -1,0 +1,47 @@
+html {
+    background-image: url(./IMGS/bg-desktop.jpg);
+    box-sizing: border-box;
+}
+
+#container {
+    border: 1px solid red;
+    width: 588px;
+    margin: auto;
+    margin-top: 56px;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    
+}
+
+#profille {
+    color: white;
+    text-align: center;
+    border: 1px solid red;
+    font-weight: 500;
+    padding: 24px;
+}
+
+#profille img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50em;
+    margin-top: 8px;
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+ul li a{
+    border: 1px solid red;
+    
+    display: flex ;
+    gap: 8px;
+    
+}
