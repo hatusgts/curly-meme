@@ -10,13 +10,19 @@ html {
 :root {
     --text-color: white ;
     --bg-url: url(./IMGS/bg-desktop.jpg);
-    --stroke-color: rgba(255, 255, 255, 0.1);
+    --stroke-color: rgba(255, 255, 255, 0.50);
+    --surface-color: rgba(255, 255, 255, 0.10);
+    --surface-color-hover: rgba(255, 255, 255, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.20);
 }
 
 .light {
     --text-color: black; 
-    --bg-url: url(./IMGS/bg-desktop-light.jpg)
-    --stroke-color: rgba(0, 0, 0, 0, 0.5)
+    --bg-url: url(./IMGS/bg-desktop-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.50);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.10);
 }
 
 
@@ -70,8 +76,8 @@ ul li a {
 
     padding: 16px 24px ;
     
-    background-color: var(--stroke-color);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--surface-color);
+    border: 1px solid var(--stroke-color);
     border-radius: 8px;
 
     -webkit-backdrop-filter: blur(4px);
@@ -84,8 +90,8 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid var(--text-color);
+    background-color: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
 }
 
 #icons {
@@ -103,11 +109,12 @@ ul li a:hover {
     align-items: center;
     padding: 16px;
     border-radius: 50%;
-    transition: background 0.2s;
+    
+    transition: 0.3s;
 }
 
 #icons a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--highlight-color);
     padding: 16px;
     border-radius: 50%;
 }
